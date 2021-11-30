@@ -10,7 +10,15 @@ public class MatChangeButton : MonoBehaviour
     private FluidManager fluidManager;
     private void Start()
     {
-        fluidManager = FindObjectOfType<FluidManager>(true);
+        try
+        {
+            fluidManager = FindObjectOfType<FluidManager>(true);
+        }
+        catch(Exception e)
+        {
+            Debug.Log(e.Message);
+            throw;
+        }
         material = GetComponent<MeshRenderer>().material;
     }
 
