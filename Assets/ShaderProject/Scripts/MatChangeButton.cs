@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,7 @@ public class MatChangeButton : MonoBehaviour
         }
         catch(Exception e)
         {
-            Debug.Log(e.Message);
+            File.WriteAllText("errorLog.txt", e.Message);
             throw;
         }
         material = GetComponent<MeshRenderer>().material;
@@ -26,7 +27,15 @@ public class MatChangeButton : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            fluidManager.SetAllMaterials(material);
+            try
+            {
+                fluidManager.SetAllMaterials(material);
+            }
+            catch(Exception e)
+            {
+                File.WriteAllText("errorLog.txt", e.Message);
+                throw;
+            }
         }
     }
 }
