@@ -1,0 +1,10 @@
+28/12/2021 7:01:03 PM - Attempted to divide by zero.
+28/12/2021 7:02:38 PM - Attempted to divide by zero.
+28/12/2021 7:02:41 PM - Attempted to divide by zero.
+28/12/2021 7:02:43 PM - Attempted to divide by zero.
+28/12/2021 7:02:46 PM - Object reference not set to an instance of an object
+28/12/2021 7:02:48 PM - Object reference not set to an instance of an object
+28/12/2021 7:05:50 PM - Object reference not set to an instance of an object
+28/12/2021 7:05:52 PM - Attempted to divide by zero.
+28/12/2021 7:05:55 PM - Attempted to divide by zero.
+28/12/2021 7:05:57 PM - Object reference not set to an instance of an object
